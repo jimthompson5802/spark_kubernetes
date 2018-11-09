@@ -10,6 +10,7 @@ clean:
 	rm -fr spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}
 
 #
+# Download the Spark run-time
 # Build docker image
 #
 build:
@@ -25,8 +26,9 @@ build:
 
 
 #
-# Run sample example
+# Run sample example program JavaSparkPi 
 # URL for --master obtained from `kubectl cluster-info`
+# run with 7 Spark Executor tasks
 #
 run_example:
 	${SPARK_HOME}/bin/spark-submit \

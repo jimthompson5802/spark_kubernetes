@@ -5,6 +5,7 @@ Procedure based on this [write-up](https://spark.apache.org/docs/2.3.0/running-o
 ## System Requirements
 * MacOS
 * [Docker for Mac](https://store.docker.com/editions/community/docker-ce-desktop-mac) 18.06.1 ce (requires kubernetes enabled)
+* make
 
 
 ## Instructions
@@ -19,7 +20,8 @@ git clone https://github.com/jimthompson5802/spark_kubernetes.git
 Once the repo is downloaded, navigate to the downloaded directory and execute the following commands:
 ```
 #
-# clean old stuff 
+# clean old stuff
+# Not needed if this is the first time
 #
 make clean
 
