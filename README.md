@@ -1,4 +1,4 @@
-# Kubernetes and Apache Spark
+# Apache Spark Running on Kubernetes
 
 Procedure based on this [write-up](https://spark.apache.org/docs/2.3.0/running-on-kubernetes.html).
 
