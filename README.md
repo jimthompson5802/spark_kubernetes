@@ -10,7 +10,8 @@ Procedure based on this [write-up](https://spark.apache.org/docs/2.3.0/running-o
 
 ## Instructions
 
-Start Docker for Mac and enable Kubernetes.
+Start Docker for Mac and enable Kubernetes.  With Kubernetes enabled, run `kubectl cluster-info` to find Spark Master url to 
+set the `--master` parameter in  the `run_example` target in the Makefile.  URL is of the form  `k8s://<api_server_url>`
 
 To run the sample program `git clone` this repo:
 ```
