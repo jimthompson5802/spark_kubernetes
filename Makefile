@@ -14,7 +14,7 @@ clean:
 # Build docker image
 #
 build:
-	# get spark run-time
+	# download spark run-time
 	curl -s http://mirror.reverse.net/pub/apache/spark/spark-${APACHE_SPARK_VERSION}/spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz |\
 	tar -xz -C .
 
