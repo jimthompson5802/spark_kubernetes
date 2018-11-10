@@ -10,8 +10,7 @@ Procedure based on this [write-up](https://spark.apache.org/docs/2.3.0/running-o
 
 ## Instructions
 
-Start Docker for Mac and enable Kubernetes.  With Kubernetes enabled, run `kubectl cluster-info` to find Spark Master url to 
-set the `--master` parameter in  the `run_example` target in the Makefile.  URL is of the form  `k8s://<api_server_url>`
+Start Docker for Mac and enable Kubernetes.  
 
 To run the sample program `git clone` this repo:
 ```
@@ -38,15 +37,12 @@ make build
 #
 make run_example
 
-#
-# get name of Spark Driver program's pod
-#
-kubectl get pods
 
 #
-# retrieve Spark driver log file
+# retrieve Spark driver log file and delete driver pod
+# driver log file saved to 'sample_program_log.txt'
 #
-kubectl logs <spark-pi-pod-name-from-the-above>
+make get_log
 ```
 
 
